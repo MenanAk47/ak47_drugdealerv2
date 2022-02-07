@@ -24,6 +24,7 @@
 <li>Restart your server</li>
 </ol>
 <p><strong>Join discord for support:</strong> <a href="https://discord.gg/RKZcVwh">https://discord.gg/RKZcVwh</a></p>
+<p><strong>Note:</strong> We do not support custom frameworks, highly modified versions of ESX, or deprecated/outdated versions of anything.</p>
 <p><strong>More Drugs Scripts:</strong></p>
 <ol>
 <li>ak47_drugdealer: https://youtu.be/gfCFfA9gWLA</li>
@@ -32,3 +33,4 @@
 <li>ak47_cokeplane: <a href="https://youtu.be/LSVhblAbqVI">https://youtu.be/LSVhblAbqVI </a></li>
 <li>ak47_weed: https://youtu.be/p_6cTE_wUJY</li>
 </ol>
+
