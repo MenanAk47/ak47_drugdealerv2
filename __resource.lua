@@ -8,6 +8,8 @@ server_scripts {
     'config.lua',
     'server/utils.lua',
     'server/loader.lua',
+    
+    'locales/locale.lua',
     'locales/en.lua',
 }
 
@@ -15,5 +17,7 @@ client_scripts {
     'config.lua',
     'client/utils.lua',
     'client/loader.lua',
+    
+    'locales/locale.lua',
     'locales/en.lua',
 }
