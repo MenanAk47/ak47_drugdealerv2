@@ -1,36 +1,84 @@
-<h1>FIVEM NPC DRUG SELL SCRIPT FOR NO NPC SERVER | ESX FRAMEWORK</h1>
-<p>Required minumum <span style="color: #339966;">$5</span> of patreon membership. <a href="https://patreon.com/menanak47" target="_blank">Get your membership</a> (if you don't have already)</p>
-<p><strong>Video Showcase:</strong> <a href="https://youtu.be/OHNaZ1T91VE">YouTube</a></p>
-<p><strong>Fully Compatible with</strong> <a href="https://youtu.be/uiQaDUQ7FBo" target="_blank">ak47_druglabs</a></p>
-<p><strong>QBCore Version:</strong> <a href="https://github.com/MenanAk47/ak47_qb_drugdealerv2" target="_blank">ak47_qb_drugdealerv2</a></p>
-<p><strong>Features:</strong></p>
-<ol>
-<li>No existing NPC required in the server.</li>
-<li>Sell unlimited drugs to the NPC</li>
-<li>NPC will choose random item if player have multiple items</li>
-<li>Drug price will be random as configured in config.lua</li>
-<li>NPC will take what ever you have</li>
-<li>Sometime they will reject your product</li>
-<li>Sometime police will be notified</li>
-<li>Highly optimized script 0.01ms while not using.</li>
-</ol>
-<p><strong>How to install:</strong></p>
-<ol>
-<li>Download file as zip</li>
-<li>Rename folder to ak47_drugdealerv2</li>
-<li>Install nessary sql &amp; images</li>
-<li>Set your patreon email in config.lua</li>
-<li>Add this resource at the bottom of your server.cfg</li>
-<li>Restart your server</li>
-</ol>
-<p><strong>Join discord for support:</strong> <a href="https://discord.gg/RKZcVwh">https://discord.gg/RKZcVwh</a></p>
-<p><strong>Note:</strong> We do not support custom frameworks, highly modified versions of ESX, or deprecated/outdated versions of anything.</p>
-<p><strong>More Drugs Scripts:</strong></p>
-<ol>
-<li>ak47_drugdealer: https://youtu.be/gfCFfA9gWLA</li>
-<li>ak47_drugsell: https://youtu.be/iwrWpmo31kQ</li>
-<li>ak47_usabledrugs: <a href="https://youtu.be/zQJ--6U52Aw">https://youtu.be/zQJ--6U52Aw </a></li>
-<li>ak47_cokeplane: <a href="https://youtu.be/LSVhblAbqVI">https://youtu.be/LSVhblAbqVI </a></li>
-<li>ak47_weed: https://youtu.be/p_6cTE_wUJY</li>
-</ol>
+**The ultimate corner drug dealing experience for FiveM servers.** Transform street-level narcotics roleplay with an immersive, dynamic corner selling system where NPC buyers approach dealers using realistic pathfinding. Features synchronized hand-to-hand prop animations, ambient voice lines, customer rejection mechanics, police snitch calls, and black money or marked bill payouts, all powered by `ak47_lib` multi-framework support.
 
+---
+
+## 🎥 Showcase
+
+> **[Click here to watch the full feature showcase on YouTube](https://youtu.be/OHNaZ1T91VE)**
+
+---
+
+
+## 🔥 Key Features
+
+Designed to improve roleplay immersion and economy balancing:
+
+### 🌿 Dynamic Corner Dealing & NPC AI
+
+* **Anywhere Corner Dealing:** Players can initiate dealing on the street using configurable commands (`/start-sell`, `/stop-sell`) and play an initial phone calling animation to arrange buyer appointments.
+* **Realistic NPC Pathfinding:** Customers spawn at random offset coordinates and realistically walk directly up to the dealer using native pathfinding, facing the player upon arrival.
+* **Proximity Leash Protection:** If the dealer walks more than 10 meters away from their designated dealing area, the session cancels automatically to prevent roaming exploits.
+
+### 🎬 Immersive Interactions & Synced Animations
+
+* **Synchronized Prop Exchange:** Seamless hand-to-hand animated transactions where the player passes a drug prop (`prop_meth_bag_01`) and the customer hands over a cash pile (`xs_prop_arena_cash_pile_s`).
+* **Ambient NPC Voice Lines:** Buyers speak authentic ambient voice lines, expressing gratitude on successful trades or throwing insults when deals fall through.
+* **Smooth TextUI Prompts:** Clean on-screen floating control hints powered by `ak47_lib` Text UI guide players through selling interactions.
+
+### 🚨 Risk, Rejections & Police Dispatch
+
+* **Configurable Rejection Rates:** Customers can randomly reject your drugs, insult your quality, and return the product without paying.
+* **NPC Police Snitch Mechanism:** Disgruntled or rejecting buyers have a configurable chance to pull out their phone and report the dealer directly to law enforcement.
+* **Custom Dispatch & Radius Blip:** Includes built-in fading radius police blips as well as custom dispatch event hooks (`ak47_drugdealerv2:policeAlert:custom`) for scripts like cd_dispatch, ps-dispatch, qs-dispatch, or core-dispatch.
+* **Minimum Police & Job Restrictions:** Require a minimum number of on-duty cops before drug sales can start, with optional toggles to restrict on-duty police or EMS from selling.
+
+### 💰 Economy Balancing & Inventory Support
+
+* **Flexible Drug Catalog & Pricing:** Configure minimum and maximum sale quantities and random price ranges per individual drug type.
+* **Cash, Dirty Money & Marked Bills:** Choose between standard cash, dirty money, or marked bills. Marked bills fully support item metadata worth (`usemetavalue`) or raw item count.
+* **Pre-Configured Drug Items:** Comes pre-packaged with 8 items and icons (Weed, Coke, Meth, Spice, Heroin, Lean, Double Cup, and X-Pills) ready for ESX, QB, and OX inventory.
+
+### 🛠️ Technical Excellence
+
+* **Multi-Framework & Target Support:** Seamlessly works with ESX, QB, QBX, and various target systems (ox_target, qb-target, qtarget).
+* **Highly Secure:** Built-in server-side exploit checks, including distance validation and trigger authentication, to prevent cheating.
+* **Deep Inventory & Gang Integration:** Native compatibility with `ox_inventory`, `qb-inventory`, and an extensible event hook (`ak47_drugdealerv2:onsell:success`) to reward gang reputation and leveling points.
+
+---
+
+## 💻 Framework:
+
+* ESX, QB, QBX
+
+---
+
+## ⚙️ Dependencies:
+
+* ak47_lib: https://github.com/MenanAk47/ak47_lib/releases/latest
+
+---
+
+## ⚙️ How To Install:
+
+* Download ak47_drugdealerv2 from your cfx portal.
+* Add the script in your resources folder.
+* Add items based on your framework instruction.
+* Add item images into inventory.
+* Start the script in your server.cfg below framework files.
+* Make sure you have all dependencies.
+* Restart the server.
+
+---
+
+## 🔗 Links & Support:
+
+* **📖 Documentation:** [https://docs.menanak47.com/multi-framework/ak47_drugdealerv2](https://docs.menanak47.com/multi-framework/ak47_drugdealerv2)
+* **🛒 Buy Now (Tebex):** [https://menanak47.tebex.io/package/5089375](https://menanak47.tebex.io/package/5089375)
+* **💬 Discord Support:** [https://discord.gg/menanak47](https://discord.gg/menanak47)
+
+---
+
+## 📝 Note:
+* We don't support custom framework. Make sure you are using official framework update.
+* Renaming the script is not allowed. It may break the functionalities.
+* Don't upload the script with FileZilla, Use Winscp if you are using FTP for file uploading
