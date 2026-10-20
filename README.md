@@ -3,6 +3,7 @@
 ---
 
 ## 🎥 Showcase
+<img width="1920" height="1080" alt="thumbnail" src="https://github.com/user-attachments/assets/9778240c-e7d7-41a0-bcf5-b580f6457732" />
 
 > **[Click here to watch the full feature showcase on YouTube](https://youtu.be/OHNaZ1T91VE)**
 
